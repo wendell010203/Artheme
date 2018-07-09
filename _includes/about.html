@@ -1,0 +1,72 @@
+<section class="about-section" id="about-me">
+	
+	<h3>About Myself</h3>
+
+	<div class="profile-lockup">
+		<div class="profile-face"></div>
+
+		<div class="icon-megaphone">{% include icons/icon-megaphone.html %}</div>
+
+		<div class="icon-puzzle">{% include icons/icon-puzzle.html %}</div>
+
+		<div class="icon-rocket">{% include icons/icon-rocket.html %}</div>
+
+		<div class="icon-smartphone">{% include icons/icon-smartphone.html %}</div>
+	</div>
+
+	<p><strong>Wendell specializes in making things for human people. </strong> Most of the things he makes are <a href="http://travisneilson.com/">digital interfaces</a>, but he also puts effort into crafting <a href="https://soundcloud.com/travis-neilson">next level beats</a> and <a href="https://www.youtube.com/user/DevTipsForDesigners">Youtube videos</a> about making codes happen. </p>
+
+	<p>I design search at Google and try to share what I learn by making videos, giving talks, recording podcasts, & writing things down.</p>
+
+	<div class="skill-lockup">
+		{% for skill in site.data.setting.skills %}
+			<div class="skill-unit">
+				<div class="skill-label">{{ skill.name }}</div>
+				<div class="skill-icon skill-{{ skill.value }}">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+		{% endfor %}
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

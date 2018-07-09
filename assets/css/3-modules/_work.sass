@@ -1,0 +1,103 @@
+#work
+	background: $silver
+	padding:
+		top: 1px
+		bottom: 30px
+
+	h3
+		color: $orange
+		font:
+			size: 14px
+			weight: bold
+		text-align: center
+		text-transform: uppercase
+
+	.work-belt
+		width: 200%
+		//background: $orange
+		display: flex
+		margin:
+			left: -0%
+		transition: all 400ms ease-in-out
+
+		.work-container
+			width: 50%
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			//background: $orange
+
+			.work-unit
+				width: 280px
+				height: 150px
+				background:
+					size: cover
+					position: center
+				cursor: pointer
+				overflow: hidden
+
+				&:hover .work-title
+					margin:
+						left: 0%
+
+				.work-title
+					transition: all 200ms ease-in-out
+					width: 100%
+					height: 100%
+					background: $orange
+					display: flex
+					justify-content: center
+					align-items: center
+					margin:
+						left: -100%
+					font:
+						size: 16px
+					color: white
+					opacity: .9
+	
+		.work-expand
+			width: 50%
+			display: none
+			justify-content: center
+			transition: all 400ms ease-in-out
+
+			.work-shrink
+				font:
+					size: 30px
+					weight: bold
+				cursor: pointer
+				background: $red
+				color: white
+				height: 45px
+				padding: 0px 15px
+				margin:
+					right: 10px
+				border:
+					radius: 50%
+
+				&:hover
+					background: $orange
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+# Site settings
+title: Wendell Hernandez
+description: "Engineer // Programmer // Pizza // Cheese Burger"
+email: wendell010203@gmail.com
+
+# Build settings
+markdown: kramdown
+
+port: 4000
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+

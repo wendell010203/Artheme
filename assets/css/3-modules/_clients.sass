@@ -1,0 +1,123 @@
+#clients
+	padding:
+		top: 1px
+		bottom: 30px
+
+	h3
+		color: $orange
+		font:
+			size: 14px
+			weight: bold
+		text-align: center
+		text-transform: uppercase
+
+	.clients-container
+		max-width: 840px
+		margin: 0 auto
+		display: flex
+		justify-content: space-around
+		align-items: center
+
+		.clients-prev
+			cursor: pointer
+			border:
+				style: solid
+				width: 30px 35px 30px 0px
+				color: transparent #333 transparent transparent
+				radius: 5px
+
+			&:hover
+				border:
+					color: transparent $gray transparent transparent
+
+		.clients-next
+			cursor: pointer
+			border:
+				style: solid
+				width: 30px 0px 30px 35px
+				color: transparent transparent transparent #333
+				radius: 5px
+
+			&:hover
+				border:
+					color: transparent transparent transparent $gray
+
+		.clients-belt
+			max-width: 700px
+
+			.clients-unit
+				max-width: 700px
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+
+				.clients-info
+					width: 230px
+					display: flex
+					align-items: center
+					flex-direction: column
+					margin:
+						top: 0px
+
+					img
+						border:
+							radius: 50%
+
+					p
+						margin: 0px
+							top: 10px
+						font:
+							size: 17px
+						color: #333
+
+					span
+						line-height: 14px
+
+				.clients-text
+					width: 450px
+					margin:
+						left: 10px
+					font:
+						size: 17px
+					text:
+						indent: 50px
+						align: justify
+
+	.clients-logoContainer
+		max-width: 700px
+		min-width: 200px
+		margin: 0 auto
+			top: 10px
+		display: flex
+		justify-content: space-around
+		align-items: flex-end
+		flex-wrap: wrap
+
+		.clients-logo
+			cursor: pointer
+
+@media screen and (max-width: 835px)
+	.clients-container
+		.clients-prev , .clients-next
+			display: none
+
+@media screen and (max-width: 773px)
+	.clients-container
+		.clients-belt
+			max-width: 450px 
+			min-width: 200px
+
+			.clients-unit
+				max-width: 450px
+				min-width: 200px
+
+				.clients-info
+					margin-bottom: 10px
+
+	.clients-logoContainer
+		.clients-logo
+			margin-bottom: 20px
+
+
+
+

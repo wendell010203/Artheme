@@ -1,0 +1,106 @@
+.about-section
+	h3
+		color: $orange
+		font:
+			size: 14px
+			weight: bold
+		text-align: center
+		text-transform: uppercase
+
+	.profile-lockup
+		max-width: 700px
+		display: flex
+		align-items: center
+		justify-content: space-around
+		margin: 0 auto
+			bottom: 40px
+
+		.profile-face
+			width: 200px
+			height: 200px
+			background: url("../img/about/travitar.jpg")
+			border:
+				radius: 50%
+			order: 3
+
+		.icon-megaphone
+			order: 1
+
+		.icon-puzzle
+			order: 2
+
+		.icon-rocket
+			order: 4
+
+		.icon-smartphone
+			order: 5
+
+		svg
+			width: 80px
+			height: 80px
+			
+	p
+		max-width: 540px
+		text-align: justify
+		margin: 0 auto
+		text-indent: 70px
+		font:
+			size: 16px
+
+@media screen and (max-width: 640px)
+	.about-section
+		.profile-lockup
+			display: block
+			text-align: center
+
+			div
+				display: inline-block
+
+			.profile-face
+				display: block
+				margin: 0 auto
+					bottom: 20px
+
+			[class^="icon-"]
+				margin: 0px 10px
+
+.about-section
+	.skill-lockup
+		max-width: 700px
+		margin: 0 auto
+			top: 40px
+		display: flex
+		flex-wrap: wrap
+		//background: $green
+		justify-content: center
+
+		.skill-unit
+			width: 350px
+			//background: $blue
+			margin:
+				bottom: 30px
+
+			.skill-icon
+				display: flex
+				//background: $silver
+				width: 350px
+
+				span
+					width: 33px
+					height: 10px
+					background: $silver
+					//display: inline-block
+
+				@for $i from 1 through 10
+					&.skill-#{$i} span:nth-child(-n+#{$i})
+						background: $red
+
+@media screen and (max-width: 716px)
+	.about-section
+		.skill-lockup
+			.skill-unit
+				.skill-icon
+					span
+						width: 35px
+
+

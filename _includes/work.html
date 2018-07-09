@@ -1,0 +1,44 @@
+<section id="work">
+	<h3>Work</h3>
+
+	<div class="work-belt">
+		<div class="work-container">
+			{% for work in site.data.setting.works %}
+
+				<div class="work-unit" style="background-image: url(assets/img/work/{{ work.folder }}/thumb.jpg)">
+					<div class="work-title" data-folder="{{ work.folder }}">{{ work.name }}</div>
+				</div>
+
+			{% endfor %}
+		</div>
+
+		<div class="work-expand">
+			<div class="work-shrink"><</div>
+			<img src="assets/img/work/proj-2/work.jpg">
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
